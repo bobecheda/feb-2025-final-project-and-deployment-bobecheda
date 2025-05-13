@@ -60,6 +60,9 @@ SportStyle is a modern e-commerce platform specializing in premium sportswear an
      ```bash
      npx http-server
      ```
+ 4.  **Live Demo**
+      -check out the live version of the website hosted on Netlify:
+      [text](https://randomkitske.netlify.app/)
 
 ## 📁 Project Structure
 
