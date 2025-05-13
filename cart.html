@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - SportStyle</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cart.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">SportStyle</div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html" class="cart-link active">Cart <span class="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <main class="cart-container">
+        <h1>Shopping Cart</h1>
+
+        <div class="cart-content">
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <!-- Empty cart message -->
+                <div class="empty-cart" id="empty-cart-message">
+                    <img src="images/empty-cart.png" alt="Empty Cart">
+                    <h2>Your cart is empty</h2>
+                    <p>Looks like you haven't added any items to your cart yet.</p>
+                    <a href="shop.html" class="cta-button">Continue Shopping</a>
+                </div>
+
+                <!-- Cart items will be dynamically populated here -->
+                <div id="cart-items-list"></div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Shipping</span>
+                    <span id="shipping">$0.00</span>
+                </div>
+                <div class="summary-item discount">
+                    <span>Discount</span>
+                    <span id="discount">-$0.00</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="total">$0.00</span>
+                </div>
+
+                <!-- Promo Code -->
+                <div class="promo-code">
+                    <input type="text" placeholder="Enter promo code" id="promo-input">
+                    <button id="apply-promo">Apply</button>
+                </div>
+
+                <!-- Checkout Button -->
+                <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+
+                <!-- Secure Checkout Info -->
+                <div class="secure-checkout">
+                    <div class="secure-info">
+                        <i class="secure-icon">🔒</i>
+                        <span>Secure Checkout</span>
+                    </div>
+                    <div class="payment-methods">
+                        <img src="images/visa.png" alt="Visa">
+                        <img src="images/mastercard.png" alt="Mastercard">
+                        <img src="images/paypal.png" alt="PayPal">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About SportStyle</h3>
+                <p>Premium sportswear and equipment for athletes and enthusiasts.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@sportstyle.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SportStyle. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
